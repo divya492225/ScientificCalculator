@@ -1,0 +1,32 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# VS Code settings folder
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+
+# Ignore compiled distributions
+*.egg-info/
+dist/
+build/
