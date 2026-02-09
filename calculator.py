@@ -1,12 +1,12 @@
 import tkinter as tk
 import math
 
-# --- Global Variables ---
+# Global Variables
 entry_var = ""
 angle_mode = "DEG"  # DEG or RAD
 inv_mode = False     # Inverse mode
 
-# --- Functions ---
+#  Functions 
 def press(key):
     global entry_var, angle_mode, inv_mode
 
@@ -99,18 +99,18 @@ def calculate():
         display_var.set("Error")
         entry_var = ""
 
-# --- Main Window ---
+# Main Window
 root = tk.Tk()
 root.title("Scientific Calculator")
 root.geometry("500x650")
 root.resizable(0,0)
 
-# --- Display ---
+#  Display 
 display_var = tk.StringVar()
 display = tk.Entry(root, textvariable=display_var, font=("Helvetica", 24), bd=5, relief=tk.RIDGE, justify="right")
 display.pack(fill="both", ipadx=8, pady=10)
 
-# --- Buttons Layout ---
+# Buttons Layout 
 buttons = [
     ["C","<-","deg","rad","π","e"],
     ["sin","cos","tan","√","!","1/x"],
@@ -120,7 +120,7 @@ buttons = [
     ["0","00",".","+","=","inv"]
 ]
 
-# --- Buttons Frame ---
+#  Buttons Frame 
 btn_frame = tk.Frame(root)
 btn_frame.pack(expand=True, fill="both")
 
@@ -143,7 +143,7 @@ btn_ln = button_objects["ln"]
 btn_log = button_objects["log"]
 btn_sqrt = button_objects["√"]
 
-# --- Make buttons responsive ---
+# Make buttons responsive 
 rows = len(buttons)
 cols = len(buttons[0])
 for i in range(rows):
